@@ -1,0 +1,76 @@
+
+  html {
+    scroll-behavior: smooth !important;
+    position: relative !important;
+  }
+  .banner-image{
+    padding-bottom: 30%;
+  }
+  .nav-link:hover{
+    color: rgb(255, 187, 0) !important;
+    
+  }
+  .dropdown-item:hover{
+    color: rgb(255, 187, 0) !important;
+  }
+  .nav-link{
+    font-weight: bolder !important ;
+  }
+  .mission{
+    background-image: url(./images/IMG_8624.jpg);
+    opacity: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 5%;
+  }
+  .mission h1{
+    font-size: 100px;
+  }
+.mission P{
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bolder;
+  
+}
+a.btn{
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transform: scale(1.5);
+  margin-top: 50px;
+  border-color: rgb(255, 255, 255);
+}
+a.btn:hover{
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  padding: 3rem;
+}
+.media .text-white{
+  padding-top: 80%;
+  font-size: 90px;
+  font-weight: bolder;
+}
+.values{
+  background-image: url(./images/img321.jpg);
+  opacity: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10%;
+}
+.values h1{
+  font-size: 100px;
+}
+.values P{
+font-size: 20px;
+color: aliceblue;
+font-weight: bolder;
+
+}
+.strategy{
+  font-size: 100%;
+}
+.words{
+  padding-top: 10%;
+}
