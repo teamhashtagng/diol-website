@@ -1,0 +1,99 @@
+
+  html {
+    scroll-behavior: smooth !important;
+    position: relative !important;
+  }
+  .banner-image{
+    padding-bottom: 30%;
+  }
+  .nav-link:hover{
+    color: rgb(255, 187, 0) !important;
+    
+  }
+  .dropdown-item{
+    color: rgb(255, 187, 0) !important;
+    font-weight: bolder !important;
+    display: block;
+  }
+  .dropdown:hover .dropdown-menu{
+    display: block !important;
+  }
+  .dropdown:focus .dropdown-menu{
+    display: block !important;
+  }
+  .dropdown .dropdown-menu.show{
+    display: none !important;
+  }
+  .nav-link{
+    font-weight: bolder !important ;
+  }
+  .content .text-white{
+    padding-top: 130% !important;
+    font-weight: 100;
+  }
+  .mission{
+    background-image: url(./images/IMG_8624.jpg);
+    opacity: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 5%;
+  }
+  .mission h1{
+    font-size: 100px;
+  }
+.mission P{
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bolder;
+  
+}
+a.btn{
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transform: scale(1.5);
+  margin-top: 50px;
+  border-color: rgb(255, 255, 255);
+}
+a.btn:hover{
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  padding: 3rem;
+}
+.media .text-white{
+  padding-top: 80%;
+  font-size: 90px;
+  font-weight: bolder;
+}
+.values{
+  background-image: url(./images/img321.jpg);
+  opacity: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10%;
+}
+.values h1{
+  font-size: 100px;
+}
+.values P{
+font-size: 20px;
+color: aliceblue;
+font-weight: bolder;
+}
+
+.words{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.location{
+  font-size: 170%;
+  font-weight: bold;
+}
+
+.Strategy{
+  padding-bottom: 10%;
+  font-size: 200%;
+  font-weight: bold;
+}
