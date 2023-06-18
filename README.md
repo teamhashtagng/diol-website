@@ -1,2 +1,2 @@
-# diol-website
-Website for DIOL 
+# DOODS-website
+Website for DOODS 

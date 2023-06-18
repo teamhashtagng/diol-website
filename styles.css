@@ -6,12 +6,15 @@
   .banner-image{
     padding-bottom: 30%;
   }
-  .nav-link:hover{
-    color: rgb(255, 187, 0) !important;
+.navbar .nav-item .nav-link{
+  color: rgb(255, 255, 255);
+}
+  .navbar .nav-link:hover{
+    color: rgb(8, 8, 8) !important;
     
   }
   .dropdown-item{
-    color: rgb(255, 187, 0) !important;
+    color: rgb(0, 0, 0) !important;
     font-weight: bolder !important;
     display: block;
   }
@@ -27,24 +30,38 @@
   .nav-link{
     font-weight: bolder !important ;
   }
+.content{
+  padding-bottom: 10%;
+}
   .content .text-white{
-    padding-top: 130% !important;
+    padding-top: 250% !important;
     font-weight: 100;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
   }
+ 
   .mission{
-    background-image: url(./images/IMG_8624.jpg);
+    background-image: url(./images/woker.JPG);
     opacity: -20px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto;
     padding-bottom: 5%;
+    background-size: cover;
+    
+  }
+  .mission img{
+    filter: brightness(0.5);
   }
   .mission h1{
-    font-size: 100px;
+    font-size: 70px;
+  font-weight: bolder;
+  padding-bottom: 5%;
   }
 .mission P{
-  font-size: 20px;
+  font-size: 23px;
   color: aliceblue;
-  font-weight: bolder;
+  font-weight: normal;
   
 }
 a.btn{
@@ -61,26 +78,33 @@ a.btn:hover{
 }
 .container{
   padding: 3rem;
+
+}
+.container .nav-item .nav-link{
+  color: rgb(255, 255, 255) !important;
+
 }
 .media .text-white{
-  padding-top: 80%;
+  
   font-size: 90px;
   font-weight: bolder;
 }
 .values{
-  background-image: url(./images/img321.jpg);
+  background-image: url(./images/img321.JPG);
   opacity: -20px;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 10%;
 }
 .values h1{
-  font-size: 100px;
+  font-size: 70px;
+  font-weight: bolder;
+  padding-bottom: 5%;
 }
 .values P{
-font-size: 20px;
+font-size: 23px;
 color: aliceblue;
-font-weight: bolder;
+font-weight: normal;
 }
 
 .words{
