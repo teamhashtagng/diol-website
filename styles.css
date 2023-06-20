@@ -1,9 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   html {
     scroll-behavior: smooth !important;
     position: relative !important;
   }
-  
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
   .home{
     background-repeat: no-repeat;
     background-position: bottom;
@@ -21,18 +23,27 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 30%;
+  padding-bottom: 20%;
 }
-.heo img{
+.hero img{
+  width: 100%;
+  height: auto;
+}
+.about{
+  background-image: url(./images/home-background-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20%;
+}
+.about img{
   width: 100%;
   height: auto;
 }
 .hero .leads{
   text-align: left !important;
 }
-  .banner-image{
-    padding-bottom: 30%;
-  }
+
 .navbar .nav-item .nav-link{
   color: rgb(255, 255, 255);
 }
@@ -67,7 +78,7 @@
     font-size: 150%;
     color: rgb(255, 255, 255);
   }
- 
+
   .mission{
     background-image: url(./images/man-at-work.jpg);
     opacity: -20px;
@@ -154,4 +165,40 @@ font-weight: normal;
   padding-bottom: 10%;
   font-size: 200%;
   font-weight: bold;
+}
+.theme-text {
+  color: #474af0;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover {
+  color: white;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: gray;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+}
+.container-fluid {
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
 }

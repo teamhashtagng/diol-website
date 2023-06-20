@@ -8823,7 +8823,7 @@ textarea.form-control-lg {
 }
 .bg-gray{
   --bs-bg-opacity: 1;
-  background: linear-gradient(to right,gray,rgb(235, 235, 235)) !important;
+  background: gray!important;
 }
 .bg-secondary {
   --bs-bg-opacity: 1;
