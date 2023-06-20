@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 20%;
+  padding-bottom: 30%;
 }
 .heo img{
   width: 100%;
@@ -69,7 +69,7 @@
   }
  
   .mission{
-    background-image: url(./images/man-at-work.jpeg);
+    background-image: url(./images/man-at-work.jpg);
     opacity: -20px;
     background-repeat: no-repeat;
     background-position: center;
