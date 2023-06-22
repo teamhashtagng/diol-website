@@ -1,110 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  html {
-    scroll-behavior: smooth !important;
-    position: relative !important;
-  }
 body {
-  font-family: 'Poppins', sans-serif !important;
+  overflow-x: hidden;
 }
-  .home{
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
+
+img {
+  max-width: 100% !important;
 }
-  .home .home-content .text-1{
-    font-size: 27px;
+
+html {
+  scroll-behavior: smooth !important;
+  position: relative !important;
 }
-.home-content{
-  padding-left: 20%;
-  margin-top: 20%;
+
+* {
+  font-family: "Proxima Nova Rg" !important;
 }
-.hero{
+
+h1 {
+  font-size: 4.5rem !important;
+  padding-left: 4rem;
+  letter-spacing: -.2rem;
+}
+
+h2 {
+  font-size: 3rem !important;
+  font-weight: bold !important;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+p {
+  font-size: 1.25rem !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important; 
+    letter-spacing: 0rem;
+    padding-left: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+.hero {
   background-image: url(./images/home-background-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 20%;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
 }
-.hero img{
-  width: 100%;
-  height: auto;
-}
-.about{
+
+.about {
   background-image: url(./images/home-background-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 20%;
 }
-.about img{
+
+.about img {
   width: 100%;
   height: auto;
 }
-.hero .leads{
-  text-align: left !important;
+
+.navbar .nav-item .nav-link {
+  color: rgb(0, 0, 0);
 }
 
-.navbar .nav-item .nav-link{
+.navbar .nav-link:hover {
+  color: rgb(16, 109, 189) !important;
+}
+
+.dropdown-item {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bolder !important;
+  display: block;
+}
+
+.dropdown-item:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(16, 109, 189) !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown:focus .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown .dropdown-menu.show {
+  display: none !important;
+}
+
+.nav-link {
+  font-weight: bolder !important;
+}
+
+.content {
+  padding-bottom: 10%;
+}
+
+.content .text-white {
+  padding-top: 250% !important;
+  font-weight: 100;
+  font-size: 150%;
   color: rgb(255, 255, 255);
 }
 
-  .navbar .nav-link:hover{
-    color: rgb(8, 8, 8) !important;
-    
-  }
-  .dropdown-item{
-    color: rgb(0, 0, 0) !important;
-    font-weight: bolder !important;
-    display: block;
-  }
-  .dropdown:hover .dropdown-menu{
-    display: block !important;
-  }
-  .dropdown:focus .dropdown-menu{
-    display: block !important;
-  }
-  .dropdown .dropdown-menu.show{
-    display: none !important;
-  }
-  .nav-link{
-    font-weight: bolder !important ;
-  }
-.content{
-  padding-bottom: 10%;
+.mission {
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.7), rgba(75, 75, 75, 0.7)), url(./images/mission-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-size: cover;
+
 }
-  .content .text-white{
-    padding-top: 250% !important;
-    font-weight: 100;
-    font-size: 150%;
-    color: rgb(255, 255, 255);
-  }
 
-  .mission{
-    background-image: url(./images/man-at-work.jpg);
-    opacity: -20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+.mission img {
+  width: 100%;
+  height: auto;
+}
 
-    background-size: cover;
-    
-  }
-  .mission img{
-    width: 100%;
-    height: auto;
-  }
-  .mission h1{
-    font-size: 70px;
+.mission h1 {
+  font-size: 70px;
   font-weight: bolder;
   padding-bottom: 5%;
-  }
-.mission P{
+}
+
+.mission p {
   font-size: 23px;
   color: aliceblue;
   font-weight: normal;
-  
+
 }
-a.btn{
+
+a.btn {
   color: rgb(255, 255, 255);
   background-color: transparent;
   border-radius: 25px;
@@ -113,59 +160,62 @@ a.btn{
   margin-top: 50px;
   border-color: rgb(255, 255, 255);
 }
-a.btn:hover{
+
+a.btn:hover {
   background-color: rgb(255, 255, 255);
 }
-.container{
+
+.container {
   padding: 3rem;
 
 }
-.container .nav-item .nav-link{
-  color: rgb(255, 255, 255) !important;
 
-}
-.media .text-white{
-  
+.media .text-white {
+
   font-size: 90px;
   font-weight: bolder;
 }
-.values{
-  background-image: url(./images/vision.jpg);
-  opacity: -20px;
+
+.values {
+  background-image: linear-gradient(0deg, rgba(75, 75, 75, .75), rgba(75, 75, 75, .75)), url(./images/values-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 10%;
+  padding-block: 10rem;
 }
-.values img{
+
+.values img {
   width: 100%;
-  height: auto;
 }
-.values h1{
+
+.values h1 {
   font-size: 70px;
   font-weight: bolder;
   padding-bottom: 5%;
 }
-.values P{
-font-size: 23px;
-color: aliceblue;
-font-weight: normal;
+
+.values P {
+  font-size: 23px;
+  color: aliceblue;
+  font-weight: normal;
 }
 
-.words{
+.words {
   padding-top: 10%;
   padding-bottom: 10%;
 }
-.location{
+
+.location {
   font-size: 170%;
   font-weight: bold;
 }
 
-.Strategy{
+.Strategy {
   padding-bottom: 10%;
   font-size: 200%;
   font-weight: bold;
 }
+
 .theme-text {
   color: #474af0;
 }
@@ -174,14 +224,17 @@ font-weight: normal;
   height: 200px;
   width: 100%;
 }
+
 .card {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
 }
+
 .card:hover {
   color: white;
 }
+
 .card::before {
   content: "";
   position: absolute;
@@ -193,12 +246,34 @@ font-weight: normal;
   transition: 0.5s;
   z-index: -1;
 }
+
 .card:hover::before {
   left: 0%;
   color: white;
 }
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
 .container-fluid {
   background-image: url("blob-scene-haikei.svg");
   background-position: center;
   background-size: cover;
+}
+
+footer {
+  background-color: #f5f5f5 !important;
+  color: black !important;
+}
+
+footer  * {
+  color: black !important;
+}
+
+footer a {
+  color: black !important;
 }
