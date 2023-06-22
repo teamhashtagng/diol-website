@@ -1,6 +1,4 @@
-body {
-  overflow-x: hidden;
-}
+
 
 img {
   max-width: 100% !important;
@@ -16,9 +14,11 @@ html {
 }
 
 h1 {
-  font-size: 4.5rem !important;
+  font-size: 3.75rem !important;
   padding-left: 4rem;
-  letter-spacing: -.2rem;
+  padding-top: 10%;
+  line-height: 1.0 !important;
+  max-width: 10ch;
 }
 
 h2 {
@@ -37,9 +37,10 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem !important; 
+    font-size: 3rem !important;
+    padding-top: 60%; 
     letter-spacing: 0rem;
-    padding-left: 0;
+    padding-left: 1rem;
   }
 
   h2 {
@@ -63,6 +64,16 @@ p {
   min-height: 100vh;
   display: grid;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+}
+
+
+.typewriter {
+  color: orange !important;
 }
 
 .about {
@@ -225,7 +236,7 @@ a.btn:hover {
   width: 100%;
 }
 
-.card {
+/* .card {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
@@ -250,7 +261,7 @@ a.btn:hover {
 .card:hover::before {
   left: 0%;
   color: white;
-}
+} */
 
 .card img {
   width: 100%;
@@ -258,6 +269,7 @@ a.btn:hover {
   object-fit: cover;
   object-position: center;
 }
+
 
 .container-fluid {
   background-image: url("blob-scene-haikei.svg");
@@ -270,10 +282,16 @@ footer {
   color: black !important;
 }
 
-footer  * {
-  color: black !important;
+footer * {
+  font-size: 1rem !important;
+  color: rgb(49, 49, 49) !important;
 }
 
-footer a {
-  color: black !important;
+.footer-logo {
+  width: 40%;
+  margin-left: -.3rem;
+}
+
+.attribution {
+  font-size: .65rem !important;
 }
