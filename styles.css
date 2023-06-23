@@ -56,7 +56,7 @@ p {
   }
 }
 
-.hero {
+/* .hero {
   background-image: url(./images/home-background-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -69,8 +69,32 @@ p {
   .hero {
     min-height: 80vh;
   }
+} */
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  aspect-ratio: 1.5 !important;
 }
 
+.hero > div {
+  position: relative;
+}
+
+.hero__title {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999 !important;
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem !important;
+    top: 0;
+    left: 10%;
+  }
+}
 
 .typewriter {
   color: orange !important;
@@ -229,7 +253,7 @@ a.btn:hover {
 }
 
 .theme-text {
-  color: #474af0;
+  color: rgb(16, 109, 189);
 }
 
 .card-img-top {
@@ -299,4 +323,48 @@ footer * {
 
 .attribution {
   font-size: .65rem !important;
+}
+
+.d-nn {
+  opacity: 0;
+}
+
+.softwares-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid-item {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.grid-item img {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 65em) {
+  .softwares-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 35em) {
+  .softwares-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal > * {
+  text-align: left !important;
+}
+
+.modal-body p {
+  font-size: 1rem !important;
+}
+
+button[data-bs-toggle="modal"] {
+  background-color: rgb(16, 109, 189) !important;
 }

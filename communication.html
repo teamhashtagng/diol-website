@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
   <link rel="stylesheet" href="./styles.css">
   <!-- <link href="./bootstrap-5.3.0-dist/css/bootstrap.css" rel="stylesheet"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <header>
   <nav class="navbar navbar-expand-md navbar-white bg-transparent px-md-4 py-4" aria-label="Fourth navbar example">
@@ -75,61 +76,284 @@
   </nav>
 </header>
 
-<div class="container-fluid">
+<div class="container">
   <h2 class="text-center mt-5 display-3 fw-bold">Information <span class="theme-text">Tech</span></h2>
   <hr class="mx-auto mb-5 w-25">
-  <div class="row mb-5">
-    <div class="col-12 col-sm-6 col-md-3 m-auto">
-      <!-- card starts here -->
-      <div class="card shadow">
-        <img src="images/web.svg" alt="" class="card-img-top">
-        <div class="card-body">
-          <h3 class="text-center">Software Development</h3>
-          <hr class="mx-auto w-75">
-          <p>
-            Our team of skilled software developers have a wealth of experience in a variety of technologies and
-            industries, making us well-equipped to handle any software development project
-          </p>
+  <div class="softwares-grid">
+    <div class="grid-item shadow">
+      <img src="./images/software-dev.svg" alt="">
+      <h3>Software Development</h3>
+      <p>Our team of skilled software developers have a wealth of experience in a variety of technologies and
+        industries...</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#software">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="software" tabindex="-1" aria-labelledby="softwareLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="softwareLabel">Software Development</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>In today's technology-driven world, software plays a crucial role in the success of businesses.
+                  Whether you're looking to automate processes, improve customer experiences, or create new products,
+                  the right software can help you achieve your goals.</p>
+                <p>At DOODS Intl, we offer top-notch software development services to help businesses like yours
+                  succeed. Our team of experienced developers uses the latest technologies and industry-leading
+                  methodologies to build software that meets your specific needs.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- card ends here -->
     </div>
-    <!-- col ends here -->
-    <div class="col-12 col-sm-6 col-md-3 m-auto">
-      <!-- card starts here -->
-      <div class="card shadow">
-        <img src="images/app.svg" alt="" class="card-img-top">
-        <div class="card-body">
-          <h3 class="text-center">Cloud Infrastructure and Governance</h3>
-          <hr class="mx-auto w-75">
-          <p>
-            We offer cloud infrastructure and governance services to help you deliver your IT resources on demand
-            through the internet
-          </p>
+    <div class="grid-item shadow">
+      <img src="./images/cloud-infrastructure.svg" alt="">
+      <h3>Cloud Infrastructure</h3>
+      <p>We offer cloud infrastructure and governance services to help you deliver your IT resources on demand through the internet</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cloudModal">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="cloudModalLabel">Cloud Infrastructure</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>As businesses increasingly move their operations to the cloud, it's more important than ever to have
+                  a robust and secure cloud infrastructure in place. With the right infrastructure and governance, you
+                  can reap the benefits of cloud computing, including cost savings, scalability, and increased
+                  efficiency.</p>
+                <p>At DOODS Intl, we specialize in providing cloud infrastructure and governance services that help
+                  businesses like yours achieve their goals. Our team of experts has extensive experience in designing,
+                  implementing, and managing cloud solutions.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- card ends here -->
     </div>
-    <!-- col ends here -->
-    <div class="col-12 col-sm-6 col-md-3 m-auto">
-      <!-- card starts here -->
-      <div class="card shadow">
-        <img src="images/dm.svg" alt="" class="card-img-top">
-        <div class="card-body">
-          <h3 class="text-center">Devops and security</h3>
-          <hr class="mx-auto w-75">
-          <p>
-            Our DevOps engineers are proficient in the latest technologies and will work to optimize your project and
-            ensure its security
-          </p>
+    <div class="grid-item shadow">
+      <img src="./images/devops-security.svg" alt="">
+      <h3>Devops and security</h3>
+      <p>Our DevOps engineers are proficient in the latest technologies and will work to optimize your project...</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#devops">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="devops" tabindex="-1" aria-labelledby="devopsLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="devopsLabel">Devops and security</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>In today's fast-paced business environment, organizations need to be able to develop and deploy
+                  software quickly and securely. DevOps and security are two critical components of any successful
+                  software development program.</p>
+                <p>At DOODS Intl, we offer DevOps and security services that help businesses like yours achieve their
+                  goals. Our team of experts has extensive experience in implementing DevOps practices and securing
+                  software applications.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- card ends here -->
     </div>
-    <!-- col ends here -->
 
-    <!-- col ends here -->
+    <div class="grid-item shadow">
+      <img src="./images/consulting.svg" alt="">
+      <h3>Consulting</h3>
+      <p>Our consulting services cover a wide range of areas at an affordable
+        price...</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultingModal">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="consultingModal" tabindex="-1" aria-labelledby="consultingModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="consultingModalLabel">Introducing Our Technology Consulting Services
+                </h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Are you looking to improve your business's technology infrastructure but don't know where to start?
+                  Look no further. Our team of technology experts is here to help you navigate the ever-changing world
+                  of technology and find the solutions that best fit your business needs.
+
+                  As businesses increasingly rely on technology to streamline operations and stay competitive,
+                  technology consulting has become an essential service for companies of all sizes. Whether you're just
+                  starting out or looking to upgrade your current technology, a technology consultant can help you find
+                  the right solutions to meet your needs and goals.
+
+                  At DOODS Intl we provide expert technology consulting services to help businesses get the most out of
+                  their technology investments. With years of experience and a deep understanding of the latest
+                  technology trends and innovations, our team of consultants can help you find the right solutions for
+                  your business.
+
+                  At DOODS Intl we believe that technology should be an enabler, not an hindrance. With our technology
+                  consulting services, you can get the expert guidance and support you need to take your business to the
+                  next level. Whether you're looking for advice on cloud computing, cybersecurity, software development,
+                  or any other area, we are here to help.
+
+                  Contact us today to learn more about how our technology consulting services can help your business
+                  succeed.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item shadow">
+      <img src="./images/centralized-apps.svg" alt="">
+      <h3>Containerized Apps</h3>
+      <p>We help your organization maximize the benefits of scaling your applications
+        at scale...</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appModal">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="appModal" tabindex="-1" aria-labelledby="appModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="appModalLabel">CONTAINERIZED APPLICATIONS AT SCALE</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>We offer comprehensive solutions to help your organization maximize the benefits of scaling your applications using modern containerization and orchestration tool like Kubernetes.
+
+                  Kubernetes is a powerful container orchestration platform that enables organizations to deploy and manage containerized applications at scale. However, deploying and managing Kubernetes can be complex and time-consuming, especially for organizations that are new to the platform or lack in-house expertise.
+                  
+                  That is where our expert services come in. We offer a range of services designed to help organizations deploy, manage, and optimize Kubernetes in their environment, from training and consulting to implementation and support.
+                  
+                  Our team of Kubernetes experts has years of experience deploying and managing Kubernetes in a variety of environments, from small businesses to large enterprises. We are dedicated to helping organizations unlock the full potential of containerized applications at scale and achieve their business objectives.
+                  
+                  Whether you are looking to deploy Kubernetes for the first time, optimize an existing deployment, or simply need ongoing support and maintenance, our professional services are designed to help you achieve your goals. Contact us today to learn more about how we can help you harness the power of containerized applications at scale.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item shadow">
+      <img src="./images/recruitment.svg" alt="">
+      <h3>Recruitment</h3>
+      <p>We offer recruitment services to help you find the best talent to join your team...</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recruitModal">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="recruitModal" tabindex="-1" aria-labelledby="recruitModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="recruitModalLabel">Discovering the Best Talent with DOODS Intl</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>In today's competitive job market, finding the right talent can be a daunting task. From sorting
+                  through countless resumes to conducting numerous interviews, the recruitment process can be
+                  time-consuming and stressful. But it doesn't have to be.
+
+                  At DOODS Intl, we're here to revolutionize the recruitment process. Our experienced team of recruiters
+                  uses innovative techniques and cutting-edge technology to match the best talent with the best
+                  companies. We take the hassle out of recruitment, allowing you to focus on what you do best - running
+                  your business.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item shadow">
+      <img src="./images/outsourcing.svg" alt="">
+      <h3>Outsourcing</h3>
+      <p>We provide outsourcing solutions for all of your IT needs and challenges...</p>
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#outsourceModal">
+          Read More
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="outsourceModal" tabindex="-1" aria-labelledby="outsourceModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable p-5">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="outsourceModalLabel">Outsourcing: A Key to Business Success with DOODs Intl</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>In today's fast-paced business environment, companies are constantly looking for ways to stay ahead of
+                  the competition. One effective solution is outsourcing. Outsourcing allows businesses to focus on
+                  their core competencies while delegating non-essential tasks to experts. This not only saves time and
+                  resources, but it can also lead to improved quality and efficiency.
+
+                  At DOODs Intl, we provide outsourcing services to help businesses succeed. Our team of experts
+                  can handle a wide range of tasks, from administrative duties to specialized functions, freeing up your
+                  time and resources to focus on your core business.
+
+                  At DOODs Intl, we understand the importance of outsourcing in today's business environment. Our
+                  goal is to provide you with the support you need to succeed. With our outsourcing services, you can
+                  focus on your core business while we handle the rest.
+
+                  Whether you're a small business or a large corporation, DOODs can help you achieve your
+                  outsourcing goals. Contact us today to learn more about our services and how we can help your business
+                  succeed.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 </div>
 
 </div>
@@ -143,7 +367,7 @@
         <p>Lagos Office</p>
         <p>Doods International Operations Limited Portal House, 5B, Adedeji Close, Opebi, Lagos State, Nigeria.</p>
         <p>Contact No: +2348057416329</p>
-        <p>Email:-info@doodsltd.com</p>
+        <p>Email: info@doodsltd.com</p>
         <p>Website: www.doodsltd.com</p>
       </div>
       <div class="col-lg-4">
@@ -203,13 +427,15 @@
       <p>© 2023. All rights reserved</p>
     </div>
     <div class="d-grid align-items-end justify-content-start">
-      <p class="attribution">Website by <a href="https://hashtagng.com" target="_blank" class="text-decoration-none text-primary attribution">Hashtag-Ng</a></p>
+      <p class="attribution">Website by <a href="https://hashtagng.com" target="_blank"
+          class="text-decoration-none text-primary attribution">Hashtag</a></p>
     </div>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <!-- <script src="./bootstrap-5.3.0-dist/js/bootstrap.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>

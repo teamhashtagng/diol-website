@@ -16,7 +16,10 @@
   <link rel="stylesheet" href="aos-by-red.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- <link href="./bootstrap-5.3.0-dist/css/bootstrap.css" rel="stylesheet"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
 </head>
 <header>
   <nav class="navbar navbar-expand-md navbar-white bg-transparent px-md-4 py-4" aria-label="Fourth navbar example">
@@ -77,8 +80,31 @@
   </nav>
 </header>
 <!-- Banner Image  -->
-<div class="hero" data-aos="fade-up">
+<!-- <div class="hero" data-aos="fade-up">
   <h1 class="fw-bold text-white">It's a whole new <span class="typewriter"></span><br>with us<br><span class="fs-5"> - DOODs</span></h1>
+</div> -->
+<div id="carouselExampleInterval" class="carousel slide hero" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <h1 class="hero__title fw-bold text-white">It's a whole new <span class="typewriter"></span><br>with us<br><span class="fs-5"> - DOODs</span></h1>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="./images/home-background-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./images/hero-bg2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 
@@ -113,25 +139,33 @@
       <h2 class="d-flex justify-content-center align-items-center pb-4">OUR STRATEGY</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
-            <div class="card border-0"><img src="./images/strategy-img1.jpg"></div>
-            <div class="p-4 pb-5 h-25 text-center">
-              <h3>CUSTOMER SATISFACTION</h3>
-              <p class="lead text-secondary text-justify">We are committed to openly and honestly working with our clients and customers in order to build a longterm relationship and to develop and deliver the right solution that makes a real contribution to the competitiveness of our customers.</p>
-            </div>
+          <div class="card border-0"><img src="./images/strategy-img1.jpg"></div>
+          <div class="p-4 pb-5 h-25 text-center">
+            <h3>CUSTOMER SATISFACTION</h3>
+            <p class="lead text-secondary text-justify">We are committed to openly and honestly working with our clients
+              and customers in order to build a longterm relationship and to develop and deliver the right solution that
+              makes a real contribution to the competitiveness of our customers.</p>
+          </div>
         </div>
         <div class="col">
-            <div class="card border-0"><img src="./images/strategy-img2.jpg"></div>
-            <div class="p-4 pb-5 text-center d-grid">
-              <h3>SAFE ENVIRONMENT</h3>
-              <p class="lead text-secondary text-justify">We relentlessly pursue our goal of providing an incident free work place for our people at all times and at any location. We care about the safe management of the environment and will protect it by conserving resources, reducing waste and preventing environmental pollution</p>
-            </div>
+          <div class="card border-0"><img src="./images/strategy-img2.jpg"></div>
+          <div class="p-4 pb-5 text-center d-grid">
+            <h3>SAFE ENVIRONMENT</h3>
+            <p class="lead text-secondary text-justify">We relentlessly pursue our goal of providing an incident free
+              work place for our people at all times and at any location. We care about the safe management of the
+              environment and will protect it by conserving resources, reducing waste and preventing environmental
+              pollution</p>
+          </div>
         </div>
         <div class="col">
-            <div class="card border-0"><img src="./images/strategy-img3.jpg"></div>
-            <div class="p-4 pb-5 text-center d-grid">
-              <h3>INTEGRITY</h3>
-              <p class="lead text-secondary text-justify">We apply the highest ethical standards to everything we do. Integrigty, honesty and accountability are at the core of our business. We believe that by treating our clients and suppliers fairly and with respect will earn their trust and we can build a sustainable sucess together.</p>
-            </div>
+          <div class="card border-0"><img src="./images/strategy-img3.jpg"></div>
+          <div class="p-4 pb-5 text-center d-grid">
+            <h3>INTEGRITY</h3>
+            <p class="lead text-secondary text-justify">We apply the highest ethical standards to everything we do.
+              Integrigty, honesty and accountability are at the core of our business. We believe that by treating our
+              clients and suppliers fairly and with respect will earn their trust and we can build a sustainable sucess
+              together.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -164,7 +198,7 @@
         <p>Lagos Office</p>
         <p>Doods International Operations Limited Portal House, 5B, Adedeji Close, Opebi, Lagos State, Nigeria.</p>
         <p>Contact No: +2348057416329</p>
-        <p>Email:-info@doodsltd.com</p>
+        <p>Email: info@doodsltd.com</p>
         <p>Website: www.doodsltd.com</p>
       </div>
       <div class="col-lg-4">
@@ -224,7 +258,8 @@
       <p>© 2023. All rights reserved</p>
     </div>
     <div class="d-grid align-items-end justify-content-start">
-      <p class="attribution">Website by <a href="https://hashtagng.com" target="_blank" class="text-decoration-none text-primary attribution">Hashtag-Ng</a></p>
+      <p class="attribution">Website by <a href="https://hashtagng.com" target="_blank"
+          class="text-decoration-none text-primary attribution">Hashtag-Ng</a></p>
     </div>
   </div>
 </footer>
@@ -265,6 +300,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <!-- <script src="./bootstrap-5.3.0-dist/js/bootstrap.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
 </html>
