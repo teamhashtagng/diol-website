@@ -368,3 +368,22 @@ footer * {
 button[data-bs-toggle="modal"] {
   background-color: rgb(16, 109, 189) !important;
 }
+
+a[href="#vision"] {
+  position: relative;
+  top: -5rem;
+}
+
+.scroll-down {
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem !important;
+  filter: invert();
+  cursor: pointer;
+}
+
+@media (max-width: 35em){
+  .scroll-down {
+    width: 2rem;
+  }
+}
